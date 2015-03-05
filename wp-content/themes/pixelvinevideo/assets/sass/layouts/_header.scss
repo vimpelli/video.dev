@@ -1,0 +1,34 @@
+/* HEADER STYLES
+---------------------------------------- */
+header {
+	position: relative;
+	padding:1em;
+	background:#292929;
+	color:$darkgray + 80;
+
+	.logo {
+		width:8em;
+	}
+
+	p {
+		margin-right: 0.5em;
+		line-height: 0.5em;
+		display: inline-block;
+	}
+	aside {
+		p {
+			line-height: 0;
+			position: absolute;
+			top:50%;
+			right:1em;
+		}
+	}
+
+	a {
+		position: absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+	}
+}

@@ -1,0 +1,248 @@
+/* HOMEPAGE STYLES
+---------------------------------------- */
+.hero {
+	background:$lightgray;
+	padding: 5em 0;
+
+	h1 {
+		// text-transform: uppercase;
+		text-align: center;
+	}
+
+	.video {
+		margin:4em auto;
+		position: relative;
+	}
+
+	button {
+		margin:0 auto;
+		display: block;
+		padding:0 8em;
+		overflow: hidden;
+		position: relative;
+		background:$green;
+		height:5rem;
+
+		&:before {
+			position:absolute;
+			height: 2.5rem;
+			top:0;
+			left:0;
+			text-align: center;
+			font-size: 1.5em;
+			width:100%;
+			display: block;
+			content:'GO';
+			transform: translateY(-200%);
+			transition: 0.2s transform cubic-bezier(0.5,0.2,0.5,0);
+		}
+
+		span {
+			position: absolute;
+			line-height: 0;
+			bottom:0;
+			left:0;
+			text-align: center;
+			width:100%;
+			height:50%;
+			transition: 0.2s transform;
+		}
+
+		&:hover {
+			span {
+				transform: translateY(200%);
+				transition: 0.3s transform;
+			}
+			&:before {
+				transform: translateY(25%);
+				transition: 0.3s transform ease-out;
+			}
+		}
+	}
+}
+
+.percentage-wrap {
+	display:inline-block;
+	margin-bottom: 3em;
+	width:100%;
+
+	.percentage {
+		$size: 2.5em;
+		font-size:$size * 2;
+		width:$size + 0.5;
+		height:$size + 0.5;
+		line-height:$size + 0.3;
+		border-radius:50em;
+		border:0.07em dotted;
+		text-align: center;
+		margin:0 auto 0.2em auto;
+	}
+
+	p {
+		text-align: center;
+		width:100%;
+		font-size: 2em;
+		display:block;
+	}
+
+	&.first h3 {
+		border-color:$orange;
+	}
+	&.second h3 {
+		border-color:$green;
+	}
+	&.third h3 {
+		border-color:$blue;
+	}
+
+}
+
+.hero {
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		bottom:-2.5em;
+		height:80px;
+		width:100%;
+		background:inherit;
+		transform: skewY(1.8deg);
+	}
+}
+
+.blurb {
+	margin: 15em 0;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+}
+
+.showcase {
+	position:relative;
+	background:$bluegray;
+	padding:8em 0;
+
+	@media (min-width:$small) {
+		> div {
+			padding:0 8em;
+		}
+	}
+	
+
+	&:before {
+		content: '';
+		position: absolute;
+		top:-2.2em;
+		height:80px;
+		width:100%;
+		background:inherit;
+		transform: skewY(-1.8deg);
+	}
+
+	
+	 h1 {
+		color:$lightgray;
+		font-weight: 100;
+		text-align: center;
+	}
+
+	.video-single {
+		overflow: hidden;
+	}
+
+	iframe {
+		position: relative;
+		z-index: 100;
+	}
+
+	h3 {
+		overflow: hidden;
+		position: relative;
+		z-index: 100;
+		color:$lightgray;
+		padding: 4em 1em 0.4em 0;
+		text-align: right;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		&:before {
+			position: absolute;
+			z-index: -1;
+			content:'';
+			bottom:-1em;
+			left:0;
+			height:3.2em;
+			width:100%;
+			transform: skewY(-1.8deg);
+		}
+
+		&.trailer {
+			&:before {
+				background:#3c853e;
+			}
+		}
+		&.narrative {
+			&:before {
+				background:#675BA9;
+			}
+		}
+		&.promo {
+			&:before {
+				background:#7E3822;
+			}
+		}
+	}
+}
+
+.action-block {
+	button {
+		margin-top: 2em;
+		overflow: hidden;
+		position: relative;
+		background:$green;
+		height:8rem;
+
+		&:before {
+			position:absolute;
+			height: 8rem;
+			top:0;
+			left:0;
+			text-align: center;
+			font-size: 1.5em;
+			width:100%;
+			display: block;
+			content:'GO';
+			transform: translateY(-100%);
+			transition: 0.2s transform cubic-bezier(0.5,0.2,0.5,0);
+		}
+
+		span {
+			position: absolute;
+			line-height: 0;
+			bottom:0;
+			left:0;
+			text-align: center;
+			width:100%;
+			height:50%;
+			transition: 0.2s transform;
+		}
+
+		&:hover {
+			span {
+				transform: translateY(200%);
+				transition: 0.3s transform;
+			}
+			&:before {
+				transform: translateY(25%);
+				transition: 0.3s transform ease-out;
+			}
+		}
+	}
+}
+
+
+
